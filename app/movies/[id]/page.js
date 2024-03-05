@@ -22,9 +22,13 @@ const MovieDetails = ({ params }) => {
   const getMovie = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(url);
+  
+        const response = await axios.get(url);
       console.log(response.data);
       setMovie(response.data);
+      
+ 
+       
     } catch (error) {
       console.log("Error occured while fetching data : ");
       console.error(error);
@@ -90,6 +94,7 @@ const MovieDetails = ({ params }) => {
           </div>
         )}
       </div>
+ 
     </div>
   );
 };

@@ -37,11 +37,14 @@
 }
 
 .content .top .media-icons a {
+    display: flex;
     height: 40px;
     width: 40px;
     margin: 0 8px;
     border-radius: 50%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     line-height: 40px;
     color: #fff;
     font-size: 17px;
